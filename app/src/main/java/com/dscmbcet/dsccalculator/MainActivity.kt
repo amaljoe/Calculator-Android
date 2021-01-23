@@ -6,8 +6,10 @@ import android.widget.Button
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_main)
         val num1 = findViewById<TextView>(R.id.num1)
         val num2 = findViewById<TextView>(R.id.num2)
@@ -20,5 +22,6 @@ class MainActivity : AppCompatActivity() {
                 result.text = n1.plus(n2).toString()
             }
         }
+
     }
 }
